@@ -2,7 +2,7 @@
 import "./card.styles.css"
 
 
-const CardContainer=(monster)=>{
+const CardContainer=({monster})=>{
     const {id,name,email}=monster;
     return(
         <div className="card-container" >

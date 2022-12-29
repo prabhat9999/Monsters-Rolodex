@@ -2,11 +2,11 @@
 
 import "./search-box.styles.css"
 
-const SearchBox=(props,onSearchChangeHandler)=>{
-
+const SearchBox=({placeHolder,onSearchChangeHandler})=>{
+console.log(onSearchChangeHandler)
     return (
         <div>
-            <input className='search-box' type='search' placeholder={props.placeHolder} onChange={onSearchChangeHandler}/>
+            <input className='search-box' type='search' placeholder={placeHolder} onChange={onSearchChangeHandler}/>
             
             </div>)
 
